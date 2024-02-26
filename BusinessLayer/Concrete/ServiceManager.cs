@@ -32,7 +32,7 @@ namespace BusinessLayer.Concrete
             _serviceDal.Delete(t);
         }
 
-        public List<Service> TGetList(Service t)
+        public List<Service> TGetList()
         {
             return _serviceDal.GetList();
         }

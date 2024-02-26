@@ -32,7 +32,7 @@ namespace BusinessLayer.Concrete
             _portfolioDal.Delete(t);
         }
 
-        public List<Portfolio> TGetList(Portfolio t)
+        public List<Portfolio> TGetList()
         {
             return _portfolioDal.GetList();
         }

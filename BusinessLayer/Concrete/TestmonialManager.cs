@@ -33,7 +33,7 @@ namespace BusinessLayer.Concrete
             _testimonial.Delete(t);
         }
 
-        public List<Testimonial> TGetList(Testimonial t)
+        public List<Testimonial> TGetList()
         {
             return _testimonial.GetList();
         }

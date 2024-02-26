@@ -32,7 +32,7 @@ namespace BusinessLayer.Concrete
             _contactDal.Delete(t);
         }
 
-        public List<Contact> TGetList(Contact t)
+        public List<Contact> TGetList()
         {
             return _contactDal.GetList();
         }

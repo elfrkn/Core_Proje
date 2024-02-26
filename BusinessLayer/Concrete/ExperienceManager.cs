@@ -32,7 +32,7 @@ namespace BusinessLayer.Concrete
             _experienceDal.Delete(t);
         }
 
-        public List<Experience> TGetList(Experience t)
+        public List<Experience> TGetList()
         {
             return _experienceDal.GetList();
         }

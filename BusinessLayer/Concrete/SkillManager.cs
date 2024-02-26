@@ -32,7 +32,7 @@ namespace BusinessLayer.Concrete
             _skillDal.Delete(t);
         }
 
-        public List<Skill> TGetList(Skill t)
+        public List<Skill> TGetList()
         {
             return _skillDal.GetList();
         }

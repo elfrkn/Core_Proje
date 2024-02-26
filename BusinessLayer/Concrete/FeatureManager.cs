@@ -33,7 +33,7 @@ namespace BusinessLayer.Concrete
             _featureDal.Delete(t);
         }
 
-        public List<Feature> TGetList(Feature t)
+        public List<Feature> TGetList()
         {
             return _featureDal.GetList();
         }

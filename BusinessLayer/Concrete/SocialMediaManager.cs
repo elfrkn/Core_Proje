@@ -34,7 +34,7 @@ namespace BusinessLayer.Concrete
             _socialmedia.Delete(t);
         }
 
-        public List<SocialMedia> TGetList(SocialMedia t)
+        public List<SocialMedia> TGetList()
         {
             return _socialmedia.GetList();
         }

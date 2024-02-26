@@ -33,7 +33,7 @@ namespace BusinessLayer.Concrete
             _messageDal.Delete(t);
         }
 
-        public List<Message> TGetList(Message t)
+        public List<Message> TGetList()
         {
             return _messageDal.GetList();
         }
