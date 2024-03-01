@@ -17,7 +17,7 @@ namespace BusinessLayer.Concrete
         {
             _experienceDal = experience;
         }
-        public Experience GetById(int id)
+        public Experience TGetById(int id)
         {
             return _experienceDal.GetById(id);
         }

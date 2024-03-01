@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrete
 
         }
 
-        public SocialMedia GetById(int id)
+        public SocialMedia TGetById(int id)
         {
             return _socialmedia.GetById(id);
         }

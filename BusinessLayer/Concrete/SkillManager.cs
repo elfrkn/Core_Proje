@@ -17,7 +17,7 @@ namespace BusinessLayer.Concrete
             _skillDal = skillDal;
         }
 
-        public Skill GetById(int id)
+        public Skill TGetById(int id)
         {
             return _skillDal.GetById(id);
         }
