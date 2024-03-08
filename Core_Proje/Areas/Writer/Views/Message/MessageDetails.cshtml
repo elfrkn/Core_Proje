@@ -16,7 +16,7 @@
     @Html.TextBoxFor(x => x.Sender, new { @class = "form-control" })
     <br />
     @Html.Label("Mesaj")
-    @Html.TextBoxFor(x => x.MessageContent, new { @class = "form-control" })
+    @Html.TextAreaFor(x => x.MessageContent, 5, 3, new { @class = "form-control" })
 </form>
 
 

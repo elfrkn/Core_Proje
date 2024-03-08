@@ -4,36 +4,50 @@
     Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-<div class="card-header border-0">
-    <h3 class="mb-0">Proje Ekleme Sayfası</h3>
-</div>
 <br />
 @using (Html.BeginForm("AddPortfolio", "Portfolio", FormMethod.Post))
 {
-    <label>Proje Başlığı</label>
-    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
-    @Html.ValidationMessageFor(x=>x.Name)
-    <br />
-    <label>Proje Resim Url</label>
-    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
-    @Html.ValidationMessageFor(x => x.ImageUrl)
-    <br />
-    <label>Proje Büyük Resim Url</label>
-    @Html.TextBoxFor(x => x.ImageUrlBig, new { @class = "form-control" })
-    @Html.ValidationMessageFor(x => x.ImageUrlBig)
-    <br />
-    <label>Proje Url</label>
-    @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "form-control" })
-    @Html.ValidationMessageFor(x => x.ProjectUrl)
-    <br />
-    <label>Fiyat</label>
-    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
-    @Html.ValidationMessageFor(x => x.Price)
-    <br />
-    <label>Tamamlanma Oranı</label>
-    @Html.TextBoxFor(x => x.Value, new { @class = "form-control" })
-    @Html.ValidationMessageFor(x => x.Value)
-    <br />
-   
-    <button class="btn btn-info">Kaydet</button>
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-description"> Proje Ekleme Paneli </p>
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label>Proje Başlığı</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Name)
+                    </div>
+                    <div class="form-group">
+                        <label>Proje Resim Url</label>
+                        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.ImageUrl)
+                    </div>
+                    <div class="form-group">
+                        <label>Proje Büyük Resim Url</label>
+                        @Html.TextBoxFor(x => x.ImageUrlBig, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.ImageUrlBig)
+                    </div>
+
+                    <div class="form-group">
+                        <label>Proje Url</label>
+                        @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.ProjectUrl)
+                    </div>
+                    <div class="form-group">
+                        <label>Fiyat</label>
+                        @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Price)
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tamamlanma Oranı</label>
+                        @Html.TextBoxFor(x => x.Value, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Value)
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                    <button class="btn btn-dark">İptal</button>
+                </form>
+            </div>
+        </div>
+    </div>
 }
