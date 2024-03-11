@@ -37,7 +37,7 @@ namespace Core_Proje.Controllers
         public IActionResult EditSocialMedia(int id)
         {
             var values = socialMediaManager.TGetById(id);
-            return RedirectToAction("Index");
+            return View(values);
         }
         [HttpPost]
 
