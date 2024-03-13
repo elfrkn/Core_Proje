@@ -1,6 +1,6 @@
 # Core Portfolio
 
-Bu projenin UI kısmında eğitim hayatınız, deneyimleriniz, referanslarınız, projeleriniz gibi bilgiler bulunur.Yazar panelinde sizin sisteminize kaydolup bu sistem üzerinden haberleşecek kişiler için bir panel oluşturuldu.
+Bu projenin UI kısmında eğitim hayatınız, deneyimleriniz, referanslarınız, projeleriniz gibi bilgiler bulunuyor.Yazar panelinde sizin sisteminize kaydolup bu sistem üzerinden haberleşecek kişiler için bir panel oluşturuldu.
 Bu panelde kişiler mesajlaşma, duyurular, profil bilgilerini düzenleme, şifre değiştirme gibi işlemlere erişim sağlayabilirler.
 
 # Kullanılan Teknolojiler 💻
